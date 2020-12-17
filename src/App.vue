@@ -57,6 +57,7 @@ export default {
     margin: 0 0 0 0;
   }
 .header{
+  font-family: "Lucida Console", "Courier New", monospace;
   margin: 0%;
   padding: 0;
   width: 100%;
@@ -83,6 +84,7 @@ font-size: 20px;
 }  
 
 .header nav button{
+ font-family: "Courier New", "Courier New", monospace;
 color: #E5E7E9;
 background: #283747;
 border: 1px solid #E5E7E9;
@@ -102,6 +104,7 @@ padding: 0%;
 background: #FDFEFE ;
 }
 .footer{
+  font-family: "Lucida Handwriting", "Courier New", monospace;
 margin: 0;
 padding: 0;
 width: 100%;
