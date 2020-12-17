@@ -41,7 +41,7 @@ export default {
         color: #283747;
     }
     #UserBalance span{
-        color: crimson;
+        color: rgb(220, 100, 20);
         font-weight: bold;
     }
 </style>
