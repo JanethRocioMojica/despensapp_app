@@ -5,7 +5,7 @@
       <nav>
         <button v-on:click="init" v-if="is_auth" > Finanzas </button>
         <button v-on:click="getBalance" v-if="is_auth" > Usuarios </button>
-        <button v-if="is_auth" > Inventarios </button>
+        <button v-on:click="inventario" v-if="is_auth" > Inventarios </button>
         <button v-if="is_auth" >Cerrar Sesión</button>
       </nav>
     </div>
@@ -13,8 +13,9 @@
       <router-view></router-view>
     </div>
     <div class="footer">
-      <h2>Equipo 7 G1M2 Misión TIC 2022</h2>
+      <h2>Equipo 7 G1M2 Misión TIC 2022!!!</h2>
     </div>
+    
   </div>
 </template>
 
@@ -36,11 +37,19 @@ export default {
       }
     },
     getBalance: function(){
+      
       if(this.$route.name != "user_balance"){
         let username = localStorage.getItem("current_username")
         this.$router.push({ name:"user_balance",params:{username:username}
                           })
       }
+    },
+    inventario: function(){
+      
+      let username = localStorage.getItem("current_username")
+      this.$router.push({ name:"user_inventario",params:{username:username}
+                          })
+    
     },
   },
     beforeCreate: function(){

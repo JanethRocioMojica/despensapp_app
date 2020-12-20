@@ -1,7 +1,8 @@
 <template>
     <div id="User">
-        <h2>Hola <span> {{username}}, </span> ¡Bienvenido!</h2>
+        <h2>Hola! <span> {{username}}, </span> ¡Bienvenido!</h2>
     </div>
+
 </template>
 <script>
     export default {

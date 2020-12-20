@@ -1,6 +1,7 @@
 import vueRouter from 'vue-router'
 import User from './components/User'
 import UserBalance from './components/UserBalance'
+import UserInventario from './components/UserInventario'
 import App from './App'
 const router = new vueRouter({
     mode: 'history',
@@ -21,6 +22,11 @@ const router = new vueRouter({
             name: "user_balance",
             component: UserBalance
         },
+        {
+            path: '/user/inventario/:username',
+            name: "user_inventario",
+            component: UserInventario
+        }
     ]
 })
 export default router
