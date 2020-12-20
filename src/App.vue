@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="header">
-      <h1>DESPENSAPP</h1>
+      <h1>DESPENSAPP!!</h1>
       <nav>
         <button v-on:click="init" v-if="is_auth" > Finanzas </button>
         <button v-on:click="getBalance" v-if="is_auth" > Usuarios </button>
