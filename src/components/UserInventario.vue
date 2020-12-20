@@ -80,6 +80,6 @@ border: 1px solid #E5E7E9;
     height: 30px;
 }
 .cont_consulta {
-margin-bottom: 20px;
+margin-bottom: 15px;
 } 
 </style>
