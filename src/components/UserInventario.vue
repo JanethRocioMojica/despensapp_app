@@ -41,7 +41,7 @@
           producto : li_inventario.value,
           precio : inp_cambio.value
         }
-        axios.put("https://despensapp-b.herokuapp.com/inventario/actualizar_precio", update,{headers: {"Access-Control-Allow-Origin"}})
+        axios.put("https://despensapp-b.herokuapp.com/inventario/actualizar_precio", update,{headers: {Access-Control-Allow-Origin}})
         .then((result) => {
           alert("Valor cambiado correctamente")
         })
